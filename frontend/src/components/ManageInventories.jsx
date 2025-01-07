@@ -16,7 +16,7 @@ const ManageInventories = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('http://localhost:5000/api/inventory');
+      const response = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/inventory');
       setItems(Array.isArray(response.data) ? response.data : []);
     } catch (err) {
       setError('Error fetching inventory items');
