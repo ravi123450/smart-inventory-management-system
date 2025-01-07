@@ -12,7 +12,7 @@ const ManageSuppliers = () => {
   useEffect(() => {
     const fetchSuppliers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/suppliers', {
+        const response = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/suppliers', {
           params: { search, filter }
         });
         setSuppliers(response.data);
