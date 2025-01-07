@@ -11,7 +11,7 @@ const GenerateReport = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:5000/api/reports/sales-report', {
+      const response = await axios.get('https://smart-inventory-management-system-7.onrender.com/sales-report', {
         params: { startDate, endDate },
       });
       setReport(response.data);
