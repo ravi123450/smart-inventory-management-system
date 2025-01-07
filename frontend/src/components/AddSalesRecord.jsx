@@ -12,7 +12,7 @@ const AddSalesRecord = () => {
     e.preventDefault();
     try {
       const newSale = { customerName, productName, quantity, price };
-      await axios.post('http://localhost:5000/api/sales/add', newSale);
+      await axios.post('https://smart-inventory-management-system-7.onrender.com/api/sales/add', newSale);
       setCustomerName('');
       setProductName('');
       setQuantity('');
