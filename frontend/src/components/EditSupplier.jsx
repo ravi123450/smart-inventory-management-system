@@ -20,7 +20,7 @@ const EditSupplier = () => {
     if (id) {
       const fetchSupplier = async () => {
         try {
-          const response = await axios.get(`http://localhost:5000/api/suppliers/${id}`);
+          const response = await axios.get(`https://smart-inventory-management-system-7.onrender.com/api/suppliers/${id}`);
           setSupplier(response.data);
         } catch (error) {
           console.error('Error fetching supplier:', error);
