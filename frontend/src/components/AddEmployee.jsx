@@ -13,7 +13,7 @@ const AddEmployee = ({ onEmployeeAdded }) => {
     e.preventDefault();
     try {
       const newEmployee = { name, department, email };
-      await axios.post('http://localhost:5000/api/employees', newEmployee);
+      await axios.post('https://smart-inventory-management-system-7.onrender.com/api/employees', newEmployee);
 
       // Reset form and notify parent
       setName('');
