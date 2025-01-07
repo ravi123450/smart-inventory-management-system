@@ -36,16 +36,16 @@ const Dashboard = () => {
 
   const fetchData = async () => {
     try {
-      const ordersResponse = await axios.get('http://localhost:5000/api/orders');
+      const ordersResponse = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/orders');
       setTotalOrders(ordersResponse.data.length);
 
-      const suppliersResponse = await axios.get('http://localhost:5000/api/suppliers');
+      const suppliersResponse = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/suppliers');
       setTotalSuppliers(suppliersResponse.data.length);
 
-      const inventoryResponse = await axios.get('http://localhost:5000/api/inventory');
+      const inventoryResponse = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/inventory');
       setTotalInventory(inventoryResponse.data.length);
 
-      const employeesResponse = await axios.get('http://localhost:5000/api/employees');
+      const employeesResponse = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/employees');
       setTotalEmployees(employeesResponse.data.length);
       setEmployees(employeesResponse.data);
     } catch (error) {
@@ -55,7 +55,7 @@ const Dashboard = () => {
 
   const fetchSalesData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/reports/sales-report', {
+      const response = await axios.get('https://smart-inventory-management-system-7.onrender.com/api/reports/sales-report', {
         params: { startDate: '2025-01-06', endDate: '2025-01-07' },
       });
 
