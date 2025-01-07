@@ -21,7 +21,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/raviteja', {
+mongoose.connect('mongodb+srv://merakanapalliraviteja86:wejhTlHwGGgPMXbn@cluster0.q7okber.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
