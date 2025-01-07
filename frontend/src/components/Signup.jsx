@@ -11,7 +11,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', { email, password });
+      const response = await axios.post('https://smart-inventory-management-system-7.onrender.com/api/signup', { email, password });
       if (response.data.success) {
         navigate('/login'); // Navigate to the login page
       } else {
