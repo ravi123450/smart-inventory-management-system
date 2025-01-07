@@ -30,6 +30,7 @@ function App() {
         {/* Public Routes */}
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         
         {/* Protected Routes */}
         <Route path="/dashboard" element={<Layout />}>
@@ -49,6 +50,7 @@ function App() {
           <Route path="Employeess/add" element={<AddEmployee/>}/>
           <Route path="Employees/manage" element={<ManageEmployee/>}/>
           <Route path="settings" element={<Settings/>}/>
+    
         </Route>
       </Routes>
     </Router>
